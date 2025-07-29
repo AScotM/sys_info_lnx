@@ -2,10 +2,7 @@ import platform
 import json
 
 def get_system_info():
-    """
-    Retrieve system information using the platform module.
-    Returns a dictionary with system details or None if an error occurs.
-    """
+    """ Retrieve system information using the platform module. Returns a dictionary with system details or None if an error occurs. """
     try:
         system_info = platform.uname()
         return {
@@ -21,10 +18,7 @@ def get_system_info():
         return None
 
 def main():
-    """
-    Main function to retrieve and display system information.
-    Prompts user for output format (JSON or text) and displays the result.
-    """
+    """ Main function to retrieve and display system information. Prompts user for output format (JSON or text) and displays the result. """
     try:
         info = get_system_info()
         if info is None:
